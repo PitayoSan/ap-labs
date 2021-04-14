@@ -32,3 +32,31 @@ How to submit your work
 make submit
 ```
 More details at: [Classify API](../../classify.md)
+
+Build and run the code
+==================
+
+To use this logger, you must:
+1. Declare (inside your code file) the functions you're going to use:
+```
+int infof(const char *format, ...);
+int warnf(const char *format, ...);
+int errorf(const char *format, ...);
+int panicf(const char *format, ...);
+```
+2. Compile the **logger.c** file:
+```
+$ gcc -c logger.c -o logger.o
+```
+3. Compile your code:
+```
+$ gcc -c <file>.c -o <file>.o
+```
+4. Compile both output files:
+```
+$ gcc logger.o <file>.o -o <executable>.o
+```
+5. Run the code:
+```
+$ ./<executable>.o
+```
