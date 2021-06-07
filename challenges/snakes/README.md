@@ -1,5 +1,4 @@
-Multithreaded Snakes Game
-=========================
+# Multithreaded Snakes Game
 
 Implement a multithreaded version of the video game [Snake](https://en.wikipedia.org/wiki/Snake_(video_game_genre)). This version will be a
 Computer vs Human game. Each enemy will be independent and the number of enemies is configurable. Below you can see the general
